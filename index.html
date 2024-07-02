@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengek Official Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+</head>
+
+<body>
+    <!--ALVIN  -->
+    <nav class="navbar">
+        <div class="left">
+            <a href="#home">
+                <img src="/assets/logo.png" alt="Tengek" />
+            </a>
+        </div>
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="#synopsis">Sinopsis</a>
+                </li>
+                <li>
+                    <a href="#gallery">Galeri</a>
+                </li>
+                <li>
+                    <a href="#people">Tim</a>
+                </li>
+                <li>
+                    <a href="#tengekFooter">Kontak</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!--ARIF -->
+    <div class="wallpaper" id="home">
+        <video class="bg" no-controls muted loop autoplay>
+            <source src="\assets\bg video.mp4" type="video/mp4">
+        </video>
+        <!--Tengek Logo -->
+        <img src="\assets\logo.png" alt="LOGO" />
+        <!-- Play Button to YouTube -->
+        <a href="https://www.youtube.com/watch?v=GXE5K08v_TY" class="play">
+            <span>PLAY</span>
+        </a>
+    </div>
+
+    <!--ARKAAN  -->
+    <div class="container" id="synopsis">
+        <div class="content">
+            <h1 class="title"><img src="/assets/logo.png" alt=""></h1>
+            <h2 class="synopsis-title">SINOPSIS</h2>
+            <p class="synopsis">
+                Tengek dan Yanto adalah dua orang preman yang memalak siapa saja, mulai dari anak kecil hingga orang tua.
+                Mereka yang merasa di atas angin suatu hari melakukan kesalahan yang merupakan awal dari petualangan yang sangat tidak jelas...
+            </p>
+        </div>
+        <video width="480" height="360" controls>
+            <source src="/assets/tengek_trailer_final (2).mp4" type="video/mp4">
+            Your browser does not support the video ta
+        </video>
+    </div>
+
+    <!--KITO  -->
+    <!-- 5foto minimal   -->
+    <!-- <div class="galeri" id="gallery">
+        <center>
+            <h3 style="color: white;">GALERI</h3>
+            <div class="pictarea">
+                <i class="fa-solid fa-chevron-left"></i>
+                <div class="pict">
+                    <image src="/assets/tengek.png" />
+                </div>
+                <div class="pict">
+                    <image src="/assets/dukun.png" />
+                </div>
+                <div class="pict">
+                    <image src="/assets/yanto.png" />
+                </div>
+                <div class="pict">
+                    <image src="/assets/anak kecil.png" />
+                </div>
+                <div class="pict">
+                    <image src="/assets/tengek kecil.png" />
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </center>
+    </div> -->
+
+    <section id="image-carousel" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="/assets/tengek.png" />
+                </li>
+                <li class="splide__slide">
+                    <img src="/assets/dukun.png" />
+                </li>
+                <li class="splide__slide">
+                    <img src="/assets/yanto.png" />
+                </li>
+                <li class="splide__slide">
+                    <img src="/assets/anak kecil.png" />
+                </li>
+                <li class="splide__slide">
+                    <img src="/assets/tengek kecil.png" />
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                type: 'loop',
+                padding: '20%',
+            }).mount();
+        });
+    </script>
+
+    <!-- JOSH -->
+    <div class="profile-section" id="people">
+        <h2 style="color: white;">BEHIND "TENGEK"</h2>
+        <!-- <div class="profile-container">
+            <div class="arrow left-arrow" onclick="prevProfile()">&#10094;</div>
+            <div class="profile" id="profile-1">
+                <img src="/assets/Alvin Justine.jpg" alt="Actor 1" class="profile-image">
+                <div class="profile-info">
+                    <h3>ALVIN JUSTINE</h3>
+                    <h4>DUKUN, BOCIL</h4>
+                    <p>
+                        A creative and explorative Computer Science undergraduate student enrolling in BINUS University.
+                        As a Multimedia enthusiast, Alvin is driven by burning passion and endless curiosity to bring creative ideas to life.
+                        Alvin is also capable of bringing speech, presentation, and performance excellently as a Public Speaking Enthusiast.
+                    </p>
+                    <p>General Role: Movie Director, UI/UX Designer, Website Developer</p>
+                    <p>Movie Role: Dukun, Bocil</p>
+                    <div class="social-media">
+                        <button class="icon-sosmed"><i class="fab fa-instagram"></i></button>
+                        <button class="icon-sosmed"><i class="fab fa-linkedin"></i></button>
+                        <img src="linkedin.png" alt="LinkedIn"> 
+                    </div>
+                </div>
+                
+            </div>
+            <div class="arrow right-arrow" onclick="nextProfile()">&#10095;</div>
+        </div> -->
+        <section id="profile-carousel" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="profile" id="profile-1">
+                            <img src="/assets/Alvin Justine.jpg" alt="Actor 1" class="profile-image">
+                            <div class="profile-info">
+                                <h3>ALVIN JUSTINE</h3>
+                                <h4>DUKUN, BOCIL</h4>
+                                <p>
+                                    A creative and explorative Computer Science undergraduate student enrolling in BINUS University.
+                                    As a Multimedia enthusiast, Alvin is driven by burning passion and endless curiosity to bring creative ideas to life.
+                                    Alvin is also capable of bringing speech, presentation, and performance excellently as a Public Speaking Enthusiast.
+                                </p>
+                                <p>General Role: Movie Director, UI/UX Designer, Website Developer, Actor</p>
+                                <p>Movie Role: Dukun, Bocil</p>
+                                <div class="social-media">
+                                    <button class="icon-sosmed"><i class="fab fa-instagram"></i></button>
+                                    <button class="icon-sosmed"><i class="fab fa-linkedin"></i></button>
+                                    <!-- <img src="linkedin.png" alt="LinkedIn"> -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="profile" id="profile-1">
+                            <img src="/assets/Screenshot 2024-06-19 012229.png" alt="Actor 2" class="profile-image">
+                            <div class="profile-info">
+                                <h3>DAVIN RYAN PRATAMA</h3>
+                                <h4>YANTO</h4>
+                                <p>
+                                    An ambitious Computer Science undergraduate student enrolling in BINUS University.
+                                </p>
+                                <p>General Role: Actor, Web Developer</p>
+                                <p>Movie Role: Yanto</p>
+                                <div class="social-media">
+                                    <button class="icon-sosmed"><i class="fab fa-instagram"></i></button>
+                                    <button class="icon-sosmed"><i class="fab fa-linkedin"></i></button>
+                                    <!-- <img src="linkedin.png" alt="LinkedIn"> -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="profile" id="profile-1">
+                            <img src="/assets/WhatsApp Image 2024-06-18 at 23.45.01.jpeg" alt="Actor 3" class="profile-image">
+                            <div class="profile-info">
+                                <h3>DHIYA ARKAAN MUHAMMAD</h3>
+                                <h4>PENJUAL KANGKUNG</h4>
+                                <p>
+                                    A creative Computer Science undergraduate student enrolling in BINUS University. 
+                                </p>
+                                <p>General Role: Actor, videography, web developer</p>
+                                <p>Movie Role: Penjual Kangkung</p>
+                                <div class="social-media">
+                                    <button class="icon-sosmed"><i class="fab fa-instagram"></i></button>
+                                    <button class="icon-sosmed"><i class="fab fa-linkedin"></i></button>
+                                    <!-- <img src="linkedin.png" alt="LinkedIn"> -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="profile" id="profile-1">
+                            <img src="/assets/46417.jpg" alt="Actor 4" class="profile-image">
+                            <div class="profile-info">
+                                <h3>ARIF BAGUS WIBOWO</h3>
+                                <h4>TENGEK KECIL</h4>
+                                <p>
+                                    A cool Computer Science undergraduate student enrolling in BINUS University.
+                                </p>
+                                <p>General Role: Storyboard maker, actor, web developer</p>
+                                <p>Movie Role: Tengek kecil</p>
+                                <div class="social-media">
+                                    <button class="icon-sosmed"><i class="fab fa-instagram"></i></button>
+                                    <button class="icon-sosmed"><i class="fab fa-linkedin"></i></button>
+                                    <!-- <img src="linkedin.png" alt="LinkedIn"> -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="profile" id="profile-1">
+                            <img src="/assets/IMG_9382.jpg" alt="Actor 5" class="profile-image">
+                            <div class="profile-info">
+                                <h3>JOSHUA ADRIAN </h3>
+                                <h4>TENGEK</h4>
+                                <p>
+                                    A confident Computer Science undergraduate student enrolling in BINUS University.
+                                </p>
+                                <p>General Role: Lead actor, web developer</p>
+                                <p>Movie Role: Tengek</p>
+                                <div class="social-media">
+                                    <button class="icon-sosmed"><i class="fab fa-instagram"></i></button>
+                                    <button class="icon-sosmed"><i class="fab fa-linkedin"></i></button>
+                                    <!-- <img src="linkedin.png" alt="LinkedIn"> -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="profile" id="profile-1">
+                            <img src="/assets/Screenshot 2024-06-19 012246.png" alt="Actor 6" class="profile-image">
+                            <div class="profile-info">
+                                <h3>KRISTOFER PASCAL JOVAN</h3>
+                                <h4>PREMAN</h4>
+                                <p>
+                                    A genius Computer Science undergraduate student enrolling in BINUS University.
+                                </p>
+                                <p>General Role: Videography, Actor, web developer</p>
+                                <p>Movie Role: Preman</p>
+                                <div class="social-media">
+                                    <button class="icon-sosmed"><i class="fab fa-instagram"></i></button>
+                                    <button class="icon-sosmed"><i class="fab fa-linkedin"></i></button>
+                                    <!-- <img src="linkedin.png" alt="LinkedIn"> -->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var splidep = new Splide('#profile-carousel', {
+                    type: 'loop',
+                    padding: '20%',
+                }).mount();
+            });
+        </script>
+    </div>
+
+    <!-- DAVIN -->
+    <footer class="footer" id="tengekFooter">
+        <div class="left">
+            <img src="/assets/logo.png" alt="Tengek" width="100%" />
+            <br />
+            ©2024. All Rights Reserved.
+        </div>
+        <div class="right">
+            Ikuti kami
+            <div class="social-icons">
+                <button class="mediasosial"><i class="fab fa-instagram"></i></button>
+                <button class="mediasosial"><i class="fab fa-youtube"></i></button>
+                <button class="mediasosial"><i class="fab fa-twitter"></i></button>
+                <button class="mediasosial"><i class="fab fa-linkedin"></i></button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
